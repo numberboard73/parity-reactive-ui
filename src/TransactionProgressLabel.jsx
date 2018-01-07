@@ -13,6 +13,7 @@ function styleStatus (value) {
 		value.failed ?
 			value.failed.code == -32015 ? { text: 'invalid', icon: 'exclamation', color: 'red', basic: true } :
 			value.failed.code == -32040 ? { text: 'rejected', icon: 'x', color: 'grey', basic: true } :
+			value.failed.code == -32603 ? { text: 'error', icon: 'x', color: 'grey', basic: true } :
 			null :
 		null
 	);
